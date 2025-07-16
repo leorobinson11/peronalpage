@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/personalpage/static/css/main.69d3623b.css",
-    "main.js": "/personalpage/static/js/main.a81b8ea6.js",
+    "main.css": "/personalpage/static/css/main.d55b97f6.css",
+    "main.js": "/personalpage/static/js/main.a7394d95.js",
     "static/js/453.b9b9a0a5.chunk.js": "/personalpage/static/js/453.b9b9a0a5.chunk.js",
+    "static/media/profile.png": "/personalpage/static/media/profile.121ef27ac57a5a04cc82.png",
     "static/media/buissness.png": "/personalpage/static/media/buissness.10847e880ce9494b2101.png",
     "static/media/graphql.png": "/personalpage/static/media/graphql.5782fb80c9dade0708d6.png",
     "static/media/polynomial.png": "/personalpage/static/media/polynomial.dc59f3b40f0e94e9be4e.png",
@@ -10,12 +11,12 @@
     "static/media/stellarsymulation.png": "/personalpage/static/media/stellarsymulation.9a76ec7e3e05c0f39319.png",
     "static/media/molecular-dynamics.png": "/personalpage/static/media/molecular-dynamics.7a0731b31caeb151d3bc.png",
     "index.html": "/personalpage/index.html",
-    "main.69d3623b.css.map": "/personalpage/static/css/main.69d3623b.css.map",
-    "main.a81b8ea6.js.map": "/personalpage/static/js/main.a81b8ea6.js.map",
+    "main.d55b97f6.css.map": "/personalpage/static/css/main.d55b97f6.css.map",
+    "main.a7394d95.js.map": "/personalpage/static/js/main.a7394d95.js.map",
     "453.b9b9a0a5.chunk.js.map": "/personalpage/static/js/453.b9b9a0a5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.69d3623b.css",
-    "static/js/main.a81b8ea6.js"
+    "static/css/main.d55b97f6.css",
+    "static/js/main.a7394d95.js"
   ]
 }
