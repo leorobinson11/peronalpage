@@ -51,10 +51,13 @@ const Portfolio = () => {
 
     useEffect(() => {
         updateProjects(); // run on mount
+        
+        /*
         window.addEventListener("resize", updateProjects);
         return () => {
             window.removeEventListener("resize", updateProjects);
         };
+        */
     }, []);
 
     useEffect(() => {
