@@ -1,0 +1,110 @@
+.header-container {
+    text-align: right;
+    padding: 40px;
+    margin-inline: 60px;
+    border-bottom: 1px solid rgb(42, 41, 41);
+}
+
+.links-container span {
+    font-size: 1.2rem;
+    margin-inline: 30px;
+}
+
+.links-container span a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+/* Underlineing animation */
+
+.links-container span a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: white;
+    transition: width .3s ease-in-out;
+}
+
+
+.links-container span a:hover::before {
+    width: 100%;
+}
+
+ 
+/* hamburger menu */
+
+.hamburger-menu {
+    position:absolute;
+    top: 25px;
+    right: 60px;
+    width: 50px;
+    display: none;
+    z-index: 1;
+}
+
+.hamburger-menu button {
+    width: 50px;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+}
+
+.hamburger-menu span {
+    z-index: 3;
+    margin-top: 6px;
+    height: 3px;
+    width: 50px;
+    background-color: white;
+}
+
+/* Hamburger menu animation */
+
+@media screen and (max-width:760px) {
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        float: inline-end;
+    }   
+
+    /* opened navabar*/
+    .links-container {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        height: 0;
+        width: 100%;
+        background-color: rgb(14, 13, 13);
+        left: 0;
+        top: 0;
+        overflow: hidden;
+        transition: all 0.2s ease-in-out;
+        z-index: 1;
+    }
+    
+    .links-container span {
+        margin-block: 30px;
+        font-size: 3rem;
+    }
+
+    .links-container span a::before {
+        height: 3px;
+    }
+
+    .links-container:not(.open) {
+        opacity: 0;
+    }
+    
+    .links-container.open {
+        opacity: 1;
+        height: 110%;
+    }
+}
