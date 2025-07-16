@@ -33,37 +33,38 @@ const Portfolio = () => {
     const [projects, setProjects] = useState(allprojects);
 
     const updateProjects = () => {
+        let newProjects;
         if (!showAll) {
             if (window.matchMedia("(max-width: 640px)").matches) {
-                setProjects(allprojects.slice(0,3));
+                newProjects = allprojects.slice(0, 3);
             } else if (window.matchMedia("(max-width: 950px)").matches) {
-                setProjects(allprojects.slice(0,4));
-            }  else {
-                setProjects(allprojects)
+                newProjects = allprojects.slice(0, 4);
+            } else {
+                newProjects = allprojects;
             }
         } else {
-            setProjects(allprojects)
+            newProjects = allprojects;
         }
-    }
+    
+        setProjects(newProjects);
+    };
+
+    useEffect(() => {
+        updateProjects(); // run on mount
+        window.addEventListener("resize", updateProjects);
+        return () => {
+            window.removeEventListener("resize", updateProjects);
+        };
+    }, []);
+
+    useEffect(() => {
+        updateProjects(); // run whenever showAll changes
+    }, [showAll]);
 
     const toggle = () => {
         setShowAll(prev => !prev);
-        if (showAll) {
-            document.getElementById("more-btn").innerHTML = "+ View More"
-        } else {
-            document.getElementById("more-btn").innerHTML = "- View Less"
-        }
-            
-        updateProjects();
     }
 
-    useEffect(() => {
-        updateProjects();
-        window.addEventListener("resize", updateProjects);
-        return () => {
-            window.removeEventListener("resize", updateProjects)
-        }
-    }, [projects])
 
     
     return (
@@ -75,7 +76,9 @@ const Portfolio = () => {
                         <ProjectCard title={project.title} img={project.img}/>
                     ))}
                 </div>
-                <span class="more-btn" id="more-btn" onClick={toggle}> + View More </span>
+                <span className="more-btn" onClick={toggle}>
+                    {showAll ? "- View Less" : "+ View More"}
+                </span>
             </div>
         </section>
     )

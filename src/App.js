@@ -1,3 +1,5 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Hero from './components/hero';
 import Header from './components/header';
 import Profile from './components/profile';
@@ -7,7 +9,7 @@ import Footer from './components/footer';
 
 import './App.css';
 
-function App() {
+const Home = () => {
   return (
     <header className="App">
         <Header />
@@ -17,6 +19,16 @@ function App() {
         <Contactform />
         <Footer />
     </header>
+  )
+}
+
+function App() {
+  return (
+    <BrowserRouter basename="/personalpage">
+      <Routes>
+          <Route index element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

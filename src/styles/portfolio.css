@@ -37,6 +37,8 @@
     margin-bottom: 30px;
     opacity: 0;
     transition: all .3s ease-in-out;
+    pointer-events: none;
+    cursor: default;
 }
 
 .project-card:hover {
@@ -90,4 +92,3 @@
         grid-template-columns: auto;
     }
 }
-
