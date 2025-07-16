@@ -47,7 +47,7 @@ const Decription = () => {
                 <ul> 
                     <li> Currently pursuing a bachelor degree in physiks and a degree in mathmatiks  </li>
                     <li> Fluent in English and German </li>
-                    <li> Experienced Programmer in Phython, C, C++ and Javaskript  </li>
+                    <li> Experienced Programmer in Python, C, C++ and Javaskript  </li>
                     <li> Specialize in sientifc computing aswell as web development </li>
                 </ul>
             </div>
