@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/personalpage/static/css/main.2fb77372.css",
+    "main.js": "/personalpage/static/js/main.a2698837.js",
+    "static/js/453.b9b9a0a5.chunk.js": "/personalpage/static/js/453.b9b9a0a5.chunk.js",
+    "static/media/buissness.png": "/personalpage/static/media/buissness.10847e880ce9494b2101.png",
+    "static/media/graphql.png": "/personalpage/static/media/graphql.5782fb80c9dade0708d6.png",
+    "static/media/polynomial.png": "/personalpage/static/media/polynomial.dc59f3b40f0e94e9be4e.png",
+    "static/media/chess.png": "/personalpage/static/media/chess.6b1536e679187a6118d1.png",
+    "static/media/stellarsymulation.png": "/personalpage/static/media/stellarsymulation.9a76ec7e3e05c0f39319.png",
+    "static/media/molecular-dynamics.png": "/personalpage/static/media/molecular-dynamics.7a0731b31caeb151d3bc.png",
+    "index.html": "/personalpage/index.html",
+    "main.2fb77372.css.map": "/personalpage/static/css/main.2fb77372.css.map",
+    "main.a2698837.js.map": "/personalpage/static/js/main.a2698837.js.map",
+    "453.b9b9a0a5.chunk.js.map": "/personalpage/static/js/453.b9b9a0a5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2fb77372.css",
+    "static/js/main.a2698837.js"
+  ]
+}
