@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/profile.css"
+import ProfilePicture from "../images/profile.png"
 
 import { FaWhatsapp } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
@@ -12,6 +13,7 @@ const ProfileCard = () => {
     return (
         <div className="profile-card"> 
             <div className="profile-image">
+                <img src={ProfilePicture} alt="profile-picture" className="profile-picture"/>
             </div>
 
             <div className="profile-info">
@@ -29,7 +31,7 @@ const Socials = () => {
         <div className="socials">
             <div className="icons">
                 <div className="icon-container" onClick={() => window.open("https://wa.me/+436787810316")}> <FaWhatsapp className="icon"/> </div>
-                <div className="icon-container" onClick={() => window.open("hhttps://www.instagram.com/rleo228/")}> <FaInstagram className="icon"/> </div>
+                <div className="icon-container" onClick={() => window.open("https://www.instagram.com/rleo228/")}> <FaInstagram className="icon"/> </div>
                 <div className="icon-container" onClick={() => window.open("https://www.linkedin.com/in/leo-robinson-437a46283/")}> <FaLinkedinIn className="icon"/> </div>
                 <div className="icon-container" onClick={() => window.open("https://kiensondigital.github.io/homepage/")}> <CgWebsite className="icon"/> </div>
             </div>  
