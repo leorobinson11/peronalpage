@@ -33,7 +33,7 @@ const Socials = () => {
                 <div className="icon-container" onClick={() => window.open("https://wa.me/+436787810316")}> <FaWhatsapp className="icon"/> </div>
                 <div className="icon-container" onClick={() => window.open("https://www.instagram.com/rleo228/")}> <FaInstagram className="icon"/> </div>
                 <div className="icon-container" onClick={() => window.open("https://www.linkedin.com/in/leo-robinson-437a46283/")}> <FaLinkedinIn className="icon"/> </div>
-                <div className="icon-container" onClick={() => window.open("https://kiensondigital.github.io/homepage/")}> <CgWebsite className="icon"/> </div>
+                <div className="icon-container" onClick={() => window.open("")}> <CgWebsite className="icon"/> </div>
             </div>  
         </div>
     )
