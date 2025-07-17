@@ -19,7 +19,7 @@ const ProfileCard = () => {
             <div className="profile-info">
                 <span> Leo Robinson </span>
                 <span> Developer </span>
-                <span> KienSon - Digital </span>
+                <span> TU Wien </span>
             </div>
         </div>  
     )
