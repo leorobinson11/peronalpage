@@ -8,6 +8,9 @@ import Contactform from './components/contactform';
 import Footer from './components/footer';
 
 import './App.css';
+import Project from "./components/project";
+
+
 
 const Home = () => {
   return (
@@ -27,6 +30,7 @@ function App() {
     <BrowserRouter basename="/personalpage">
       <Routes>
           <Route index element={<Home />} />
+          <Route path="projects/:index" element={<Project />} />
       </Routes>
     </BrowserRouter>
   );

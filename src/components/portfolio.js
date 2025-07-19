@@ -1,17 +1,23 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from 'react-router-dom';
 import "../styles/portfolio.css"
 
-import Stellar from '../images/projects/stellarsymulation.png'
-import MD from '../images/projects/molecular-dynamics.png'
-import Graphql from '../images/projects/graphql.png'
-import Chess from '../images/projects/chess.png'
-import Buisness from '../images/projects/buissness.png'
-import Polynomial from '../images/projects/polynomial.png'
+import Stellar from '../images/projects/stellarsymulation/1.png'
+import MD from '../images/projects/molecular-dynamics/1.png'
+import Graphql from '../images/projects/graphql/1.png'
+import Chess from '../images/projects/chess/1.png'
+import Buisness from '../images/projects/buissness/1.png'
+import Polynomial from '../images/projects/polynomial/1.png'
 
 
-const ProjectCard = ({ title, img }) => {
+const ProjectCard = ({ title, img, index }) => {
+    const navigate = useNavigate();
+    const handleClick = () => {
+        navigate('projects/'+index);
+    };
+
     return (
-        <div className="project-card"> 
+        <div className="project-card"  onClick={handleClick}> 
             <img src={img} alt="project-image" className="project-image"/>
             <span className="project-title"> {title} </span>
         </div>
@@ -19,6 +25,7 @@ const ProjectCard = ({ title, img }) => {
 }
 
 const Portfolio = () => {
+
     const allprojects = [
         { title: "Stellar Symulation", img: Stellar},
         { title: "Molecular Dynamics", img: MD},
@@ -75,8 +82,8 @@ const Portfolio = () => {
             <div className="portfolio-section">
                 <h1> My Projects </h1>
                 <div className="card-container"> 
-                    {projects.map((project) => (
-                        <ProjectCard title={project.title} img={project.img}/>
+                    {projects.map((project, idx) => (
+                        <ProjectCard title={project.title} img={project.img} index={idx}/>
                     ))}
                 </div>
                 <span className="more-btn" onClick={toggle}>

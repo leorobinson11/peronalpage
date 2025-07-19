@@ -1,0 +1,50 @@
+[
+    {
+        "title": "Stellar Simulation",
+        "text": "In my stellar nebular simulation I use a method called the Fastmultipole method (FMM) to speed up the calculation of the N-Body pairwise interactions. In FMM a quadtree is used to partition the space depending particle densities of the specific area. By approxiamting the force on a particle via local tailorexpansion of all of the multipole moments of the quadtree nodes the calculation only takes linear logarithmic time.  To calculate the bodies trajectories I used synchronized leapfrog integration.",
+        "link": "https://github.com/leorobinson11/fmmStelarsymulation",
+        "tags": ["C++", "Python", "Parralel Programming", "Quadtree", "Leapfrog"],
+        "imagenumber": 1,
+        "imagepath": "projects/stellarsymulation/"
+    },
+    {
+        "title": "Molecular dynamics Simulation",
+        "text": "In my molecualar dynamics simulation I simulate the internal vibrations of the atoms in carbohydrate molecules. A classical model is used to approximate the internal forces as the sum of the bonded interactions (Single Bond, tosion, out of plane) aswell as the non bonded interaction (Van der Wall and electrostatic). At the beginning of the simulation the xyz input file is converted to a undirected graph and all of the interaction types are determined. Newton Rhapson integration was used to simulate the internal dynamics.",
+        "link": "https://github.com/leorobinson11/DynaMol",
+        "tags": ["Python", "Numpy", "Undirected-Graphs", "Newton-Rhapson"],
+        "imagenumber": 3,
+        "imagepath": "projects/molecular-dynamics/"
+    },
+    {
+        "title": "Graphql Security Testing Tool",
+        "text": "My Graphql Security testing tool combines a number of tools with a ReactJs frontend, NodeJs backend, aswell as my own graphql-sitemaper. The tools sitemap crawls and fuzzes the website for subdomains, enuemrating graphql endpoints and sorts them by subdomain. The sitemap tool visualizes the apis schema via the SugiyamaSort algorithm.  The info tool performs portskanns aswell as a fingerprint of the apis technology and default settings",
+        "link": "https://github.com/leorobinson11/qlhunter/tree/main",
+        "tags": ["Graphql", "JS", "React", "NodeJS", "Fullstack", "API", "Websecurity"],
+        "imagenumber": 4,
+        "imagepath": "projects/graphql/"
+    },
+    {
+        "title": "Chess interface",
+        "text": "A fully functional, self-made implementation of the classic game of chess. Featuring intuitive controls, legal move validation, turn-based logic, and visual highlights for selected pieces and valid moves. Built from scratch.",
+        "link": "https://github.com/leorobinson11/ChessInterface",
+        "tags": ["JS", "HTML", "CSS", "Chess"],
+        "imagenumber": 1,
+        "imagepath": "projects/chess/"
+    },
+    {
+        "title": "Buisness Page",
+        "text": "This project is a modern business website built with ReactJs, featuring a sleek 3D animation to enhance user engagement and a responsive contact form for customer inquiries. The site is optimized for SEO to ensure strong search engine visibility.",
+        "link": "https://github.com/leorobinson11/ChessInterface",
+        "tags": ["ReactJS", "SEO", "Buisness", "Animation"],
+        "imagenumber": 1,
+        "imagepath": "projects/buissness/"
+    },
+    {
+        "title": "Polynomial Interpolation/Fitting",
+        "text": "This project implements three core techniques for polynomial interpolation and approximation: Lagrange interpolation, which constructs a global polynomial that exactly fits a given set of data points; Newton's divided differences, a recursive method that builds the interpolant efficiently and is well-suited for incremental data; and Least Squares Approximation, which fits a polynomial to data by minimizing the overall squared error, useful when dealing with noisy or overdetermined datasets.",
+        "link": "https://github.com/leorobinson11/polynomial-interpolation",
+        "tags": ["ReactJS", "SEO", "Buisness", "Least Squares", "Linear Algebra", "Nummericsnumerical Analysis"],
+        "imagenumber": 3,
+        "imagepath": "projects/polynomial/"
+    }
+]
