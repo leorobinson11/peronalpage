@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/personalpage/static/css/main.d55b97f6.css",
-    "main.js": "/personalpage/static/js/main.af090531.js",
-    "static/js/453.b9b9a0a5.chunk.js": "/personalpage/static/js/453.b9b9a0a5.chunk.js",
+    "main.css": "/personalpage/static/css/main.5dbd66a3.css",
+    "main.js": "/personalpage/static/js/main.8ff7f4da.js",
+    "static/js/453.b3738be1.chunk.js": "/personalpage/static/js/453.b3738be1.chunk.js",
     "static/media/profile.png": "/personalpage/static/media/profile.121ef27ac57a5a04cc82.png",
-    "static/media/buissness.png": "/personalpage/static/media/buissness.10847e880ce9494b2101.png",
-    "static/media/graphql.png": "/personalpage/static/media/graphql.5782fb80c9dade0708d6.png",
-    "static/media/polynomial.png": "/personalpage/static/media/polynomial.dc59f3b40f0e94e9be4e.png",
-    "static/media/chess.png": "/personalpage/static/media/chess.6b1536e679187a6118d1.png",
-    "static/media/stellarsymulation.png": "/personalpage/static/media/stellarsymulation.9a76ec7e3e05c0f39319.png",
-    "static/media/molecular-dynamics.png": "/personalpage/static/media/molecular-dynamics.7a0731b31caeb151d3bc.png",
+    "static/media/1.png": "/personalpage/static/media/1.7a0731b31caeb151d3bc.png",
+    "static/media/2.png": "/personalpage/static/media/2.8f942f3779ef6ac615bd.png",
+    "static/media/4.png": "/personalpage/static/media/4.be1e019e810e4a071327.png",
+    "static/media/3.png": "/personalpage/static/media/3.720cb16b51187cf795f0.png",
+    "static/media/revicons.eot": "/personalpage/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/personalpage/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/personalpage/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/personalpage/index.html",
-    "main.d55b97f6.css.map": "/personalpage/static/css/main.d55b97f6.css.map",
-    "main.af090531.js.map": "/personalpage/static/js/main.af090531.js.map",
-    "453.b9b9a0a5.chunk.js.map": "/personalpage/static/js/453.b9b9a0a5.chunk.js.map"
+    "main.5dbd66a3.css.map": "/personalpage/static/css/main.5dbd66a3.css.map",
+    "main.8ff7f4da.js.map": "/personalpage/static/js/main.8ff7f4da.js.map",
+    "453.b3738be1.chunk.js.map": "/personalpage/static/js/453.b3738be1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d55b97f6.css",
-    "static/js/main.af090531.js"
+    "static/css/main.5dbd66a3.css",
+    "static/js/main.8ff7f4da.js"
   ]
 }
