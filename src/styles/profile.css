@@ -71,13 +71,14 @@
 }
 
 .socials .icon-container {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
     border: 1px solid white;
     height: 80px;
     width: 80px;
     border-radius: 40px;
     margin-block: 10px;
-    align-content: center;
-    justify-content: center;
     transition: transform .1s ease-in-out;
 }
 
