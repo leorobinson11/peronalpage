@@ -26,10 +26,9 @@ const Home = () => {
 }
 
 function App() {
-  const isGitHubPages = window.location.hostname.includes("github.io");
 
   return (
-    <HashRouter basename={isGitHubPages ? "/personalpage" : "/"}>
+    <HashRouter>
       <Routes>
           <Route index element={<Home />} />
           <Route path="projects/:index" element={<Project />} />
