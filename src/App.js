@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 import Hero from './components/hero';
 import Header from './components/header';
@@ -26,13 +26,15 @@ const Home = () => {
 }
 
 function App() {
+  const isGitHubPages = window.location.hostname.includes("github.io");
+
   return (
-    <BrowserRouter basename="/personalpage">
+    <HashRouter basename={isGitHubPages ? "/personalpage" : "/"}>
       <Routes>
           <Route index element={<Home />} />
           <Route path="projects/:index" element={<Project />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
